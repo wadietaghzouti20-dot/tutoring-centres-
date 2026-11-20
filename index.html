@@ -1,0 +1,178 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#102b3f">
+<meta name="description" content="Inscrivez votre enfant aux cours de soutien scolaire. Consultez les matières, niveaux et horaires disponibles.">
+<title>Inscriptions | RENDEVO</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{--navy:#102b3f;--navy2:#173c53;--teal:#2b8c82;--mint:#e9f4ef;--paper:#f6f8f6;--ink:#172b38;--muted:#70808a;--line:#e3e9e7;--white:#fff;--gold:#d7ad69;--danger:#b84c4c;--shadow:0 18px 55px rgba(16,43,63,.09)}
+*{box-sizing:border-box}body{margin:0;background:var(--paper);color:var(--ink);font-family:"DM Sans",sans-serif}button,input,select{font:inherit}button{cursor:pointer}.topbar{height:76px;background:#fff;border-bottom:1px solid var(--line);display:flex;align-items:center;justify-content:space-between;padding:0 max(5vw,24px)}.brand{display:flex;align-items:center;gap:11px;font-family:Manrope,sans-serif;font-weight:800;letter-spacing:.12em;color:var(--navy);font-size:17px}.brandmark{height:34px;width:34px;border-radius:11px;background:var(--navy);display:grid;place-items:center;color:#fff;font-size:17px}.topnote{font-size:12px;color:var(--muted);letter-spacing:.04em}.hero{background:var(--navy);color:white;position:relative;overflow:hidden;padding:66px max(8vw,24px) 76px}.hero:after{content:"";position:absolute;width:430px;height:430px;border:1px solid rgba(255,255,255,.12);border-radius:50%;right:7%;top:-240px;box-shadow:0 0 0 55px rgba(255,255,255,.025),0 0 0 110px rgba(255,255,255,.02)}.eyebrow{font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:#a9d6ca;font-weight:700;display:flex;align-items:center;gap:10px}.eyebrow:before{content:"";height:1px;width:25px;background:var(--gold)}h1{font-family:Manrope,sans-serif;font-size:clamp(34px,5vw,57px);line-height:1.12;letter-spacing:-.045em;max-width:650px;margin:20px 0 16px}.hero p{color:#c3d1d8;max-width:530px;line-height:1.8;font-size:15px;margin:0}.hero-meta{display:flex;gap:28px;margin-top:32px;color:#d4e1e4;font-size:12px}.hero-meta span{display:flex;align-items:center;gap:8px}.dot{width:6px;height:6px;border-radius:50%;background:#7dc3ad}.main{max-width:1100px;margin:-30px auto 80px;padding:0 22px;position:relative;z-index:1}.layout{display:grid;grid-template-columns:minmax(0,1fr) 300px;gap:22px;align-items:start}.panel{background:#fff;border:1px solid var(--line);border-radius:18px;box-shadow:var(--shadow)}.formpanel{padding:34px 38px}.sidepanel{padding:27px 25px;position:sticky;top:22px}.stephead{display:flex;justify-content:space-between;align-items:center;margin-bottom:16px}.step-label{font-size:11px;letter-spacing:.16em;font-weight:700;color:var(--teal)}.step-count{font-size:12px;color:var(--muted)}.progress{height:4px;background:#edf1ef;border-radius:10px;overflow:hidden;margin-bottom:34px}.progress span{display:block;height:100%;background:var(--teal);width:33.333%;transition:width .2s}.form-title{font-family:Manrope,sans-serif;font-size:25px;letter-spacing:-.03em;margin:0 0 8px;color:var(--navy)}.form-sub{font-size:13px;color:var(--muted);line-height:1.7;margin:0 0 27px}.fieldgrid{display:grid;grid-template-columns:1fr 1fr;gap:18px}.field{display:flex;flex-direction:column;gap:8px;margin-bottom:18px}.field.full{grid-column:1/-1}.field label{font-size:12px;font-weight:700;color:#40535e}.field input,.field select{height:49px;border:1px solid #dce5e1;border-radius:9px;background:#fff;padding:0 14px;color:var(--ink);outline:none;transition:.2s}.field input:focus,.field select:focus{border-color:var(--teal);box-shadow:0 0 0 3px rgba(43,140,130,.1)}.field input::placeholder{color:#a8b3b4}.hint{font-size:11px;color:var(--muted);line-height:1.5}.course-list{display:grid;grid-template-columns:1fr 1fr;gap:12px}.course{border:1px solid var(--line);border-radius:12px;padding:16px;text-align:left;background:#fff;transition:.18s;min-height:120px;color:var(--ink)}.course:hover{border-color:#9ac7bb;transform:translateY(-1px)}.course.selected{border:1.5px solid var(--teal);background:#f1f8f5;box-shadow:0 0 0 3px rgba(43,140,130,.07)}.course-top{display:flex;justify-content:space-between;gap:8px;align-items:center}.course-name{font-weight:700;font-size:14px}.course-level{font-size:10px;background:#eef3f1;color:#577069;padding:5px 8px;border-radius:20px}.course-info{font-size:11px;color:var(--muted);line-height:1.7;margin-top:13px}.course-seats{font-size:10px;color:var(--teal);font-weight:700;margin-top:5px}.actions{display:flex;justify-content:space-between;align-items:center;margin-top:26px;padding-top:22px;border-top:1px solid var(--line)}.btn{border:0;border-radius:9px;padding:14px 20px;font-weight:700;font-size:12px;letter-spacing:.02em}.btn-primary{background:var(--navy);color:white;min-width:150px}.btn-primary:hover{background:var(--navy2)}.btn-secondary{background:#f0f4f2;color:#4d626a}.btn:disabled{opacity:.45;cursor:not-allowed}.side-kicker{font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:var(--teal);font-weight:700}.side-title{font-family:Manrope,sans-serif;font-weight:800;color:var(--navy);font-size:20px;line-height:1.3;margin:12px 0}.side-copy{font-size:12px;line-height:1.8;color:var(--muted)}.side-divider{height:1px;background:var(--line);margin:22px 0}.benefit{display:flex;gap:12px;margin:17px 0}.benefit-icon{width:30px;height:30px;flex:none;border-radius:9px;background:var(--mint);color:var(--teal);display:grid;place-items:center;font-weight:700}.benefit strong{display:block;font-size:12px;margin-bottom:4px}.benefit small{display:block;color:var(--muted);font-size:11px;line-height:1.5}.secure{font-size:10px;color:var(--muted);line-height:1.6;margin-top:22px}.notice{padding:13px 15px;border-radius:9px;font-size:12px;line-height:1.6;margin:16px 0}.notice.error{background:#fff1ef;color:var(--danger)}.notice.success{background:#edf7f1;color:#26735d}.review{background:#f7faf8;border:1px solid var(--line);border-radius:12px;padding:18px}.review-row{display:flex;justify-content:space-between;gap:14px;padding:9px 0;border-bottom:1px solid var(--line);font-size:12px}.review-row:last-child{border:0}.review-row span:first-child{color:var(--muted)}.review-row strong{text-align:right}.successbox{text-align:center;padding:35px 10px}.success-icon{width:58px;height:58px;border-radius:50%;background:var(--mint);color:var(--teal);display:grid;place-items:center;font-size:27px;margin:0 auto 18px}.successbox h2{font-family:Manrope,sans-serif;color:var(--navy);font-size:25px}.successbox p{font-size:13px;line-height:1.8;color:var(--muted);max-width:420px;margin:0 auto}.ref{display:inline-block;background:#f1f6f3;border:1px dashed #b8d4c9;border-radius:8px;padding:12px 18px;margin:20px 0;font-weight:800;letter-spacing:.1em;color:var(--navy)}.footer{text-align:center;color:#8a989b;font-size:11px;padding:0 20px 30px}.footer strong{color:var(--navy);letter-spacing:.12em}.loading{color:var(--muted);font-size:12px;padding:20px 0}.hidden{display:none!important}
+@media(max-width:800px){.layout{grid-template-columns:1fr}.sidepanel{position:static;order:2}.hero{padding-top:52px;padding-bottom:65px}.main{margin-top:-24px}.formpanel{padding:27px 24px}.sidepanel{padding:22px}.hero-meta{gap:14px;flex-wrap:wrap}}
+@media(max-width:520px){.topbar{height:65px;padding:0 20px}.topnote{font-size:10px}.hero{padding:43px 23px 58px}h1{font-size:36px}.hero p{font-size:13px}.hero-meta{font-size:10px}.main{padding:0 12px}.formpanel{padding:24px 18px}.fieldgrid,.course-list{grid-template-columns:1fr}.form-title{font-size:22px}.actions .btn{min-width:0;padding:13px 16px}.sidepanel{display:none}}
+</style>
+</head>
+<body>
+<header class="topbar">
+  <div class="brand"><div class="brandmark">R</div> RENDEVO</div>
+  <div class="topnote">ESPACE INSCRIPTIONS <span style="color:#2b8c82">·</span> ÉDUCATION</div>
+</header>
+<section class="hero">
+  <div class="eyebrow">APPRENDRE · PROGRESSER · RÉUSSIR</div>
+  <h1>Chaque progrès<br>commence ici.</h1>
+  <p>Choisissez votre cours et transmettez votre demande d'inscription en quelques étapes. Notre équipe vous accompagne pour la suite.</p>
+  <div class="hero-meta"><span><i class="dot"></i> Inscription en ligne</span><span>◇ &nbsp;Simple et sécurisé</span><span>◷ &nbsp;Quelques minutes</span></div>
+</section>
+<main class="main">
+<div class="layout">
+<section class="panel formpanel">
+  <div id="formArea">
+    <div class="stephead"><span class="step-label" id="stepLabel">01 — CHOIX DU COURS</span><span class="step-count" id="stepCount">Étape 1 sur 3</span></div>
+    <div class="progress"><span id="progressBar"></span></div>
+    <div id="step1">
+      <h2 class="form-title">Choisissez votre cours</h2>
+      <p class="form-sub">Sélectionnez la matière et le niveau qui vous correspondent.</p>
+      <div id="courseList" class="course-list"><div class="loading">Chargement des cours disponibles…</div></div>
+    </div>
+    <div id="step2" class="hidden">
+      <h2 class="form-title">Informations de l'élève</h2>
+      <p class="form-sub">Indiquez les coordonnées de l'élève à inscrire.</p>
+      <div class="fieldgrid">
+        <div class="field full"><label for="studentName">Nom complet de l'élève *</label><input id="studentName" autocomplete="name" placeholder="Ex. : Lina Benali" maxlength="100"></div>
+        <div class="field"><label for="parentName">Nom du parent / responsable *</label><input id="parentName" placeholder="Nom complet" maxlength="100"></div>
+        <div class="field"><label for="phone">Téléphone *</label><input id="phone" type="tel" autocomplete="tel" placeholder="05 XX XX XX XX" maxlength="30"></div>
+        <div class="field full"><label for="email">Adresse e-mail du parent *</label><input id="email" type="email" autocomplete="email" placeholder="parent@exemple.com" maxlength="150"><span class="hint">La confirmation d'inscription sera envoyée à cette adresse.</span></div>
+      </div>
+    </div>
+    <div id="step3" class="hidden">
+      <h2 class="form-title">Vérifiez votre demande</h2>
+      <p class="form-sub">Vérifiez les informations avant de confirmer l'inscription.</p>
+      <div class="review" id="review"></div>
+      <div class="notice" style="background:#f5f7f6;color:#65767b">L'inscription sera enregistrée sous réserve des places disponibles. Le centre pourra vous contacter pour confirmer les modalités pratiques.</div>
+      <label style="display:flex;gap:10px;align-items:flex-start;font-size:11px;line-height:1.6;color:#61727a"><input id="consent" type="checkbox" style="margin-top:2px"> J'accepte que les informations fournies soient utilisées par le centre pour traiter cette demande d'inscription.</label>
+    </div>
+    <div id="message" class="notice hidden" role="alert"></div>
+    <div class="actions" id="actions">
+      <button class="btn btn-secondary" id="backBtn" type="button" disabled>Retour</button>
+      <button class="btn btn-primary" id="nextBtn" type="button" disabled>Continuer →</button>
+    </div>
+  </div>
+  <div id="successArea" class="successbox hidden">
+    <div class="success-icon">✓</div>
+    <h2>Demande enregistrée</h2>
+    <p id="successMessage">Votre demande a bien été transmise au centre. Une confirmation sera envoyée par e-mail.</p>
+    <div class="ref" id="reference"></div>
+    <p>Conservez cette référence pour tout échange avec le centre.</p>
+  </div>
+</section>
+<aside class="panel sidepanel">
+  <div class="side-kicker">VOTRE INSCRIPTION</div>
+  <div class="side-title">Un parcours clair, étape par étape.</div>
+  <p class="side-copy">Toutes les informations nécessaires sont réunies au même endroit pour faciliter votre demande.</p>
+  <div class="side-divider"></div>
+  <div class="benefit"><div class="benefit-icon">01</div><div><strong>Choisissez un cours</strong><small>Matière, niveau, enseignant et horaire.</small></div></div>
+  <div class="benefit"><div class="benefit-icon">02</div><div><strong>Renseignez vos coordonnées</strong><small>Les informations utiles au suivi de votre demande.</small></div></div>
+  <div class="benefit"><div class="benefit-icon">03</div><div><strong>Confirmez votre demande</strong><small>Recevez une référence et un e-mail de confirmation.</small></div></div>
+  <div class="side-divider"></div>
+  <div class="side-kicker">BESOIN D'AIDE ?</div>
+  <p class="side-copy">Contactez directement le centre pour toute question concernant les cours, les tarifs ou les disponibilités.</p>
+  <p class="secure">Les informations transmises sont utilisées uniquement pour le traitement de la demande d'inscription.</p>
+</aside>
+</div>
+</main>
+<footer class="footer">UNE EXPÉRIENCE D'INSCRIPTION PAR <strong>RENDEVO</strong></footer>
+<script>
+/* Add your deployed Google Apps Script /exec URL here. */
+const API_URL = "";
+let courses = [];
+let selectedCourse = null;
+let step = 1;
+const $ = id => document.getElementById(id);
+
+function showMessage(text,type="error"){
+  const box=$("message");box.textContent=text;box.className="notice "+type;
+}
+function clearMessage(){$("message").className="notice hidden";$("message").textContent="";}
+function setStep(n){
+  step=n;
+  [1,2,3].forEach(i=>$("step"+i).classList.toggle("hidden",i!==n));
+  $("stepLabel").textContent=["01 — CHOIX DU COURS","02 — VOS COORDONNÉES","03 — VÉRIFICATION"][n-1];
+  $("stepCount").textContent="Étape "+n+" sur 3";
+  $("progressBar").style.width=(n/3*100)+"%";
+  $("backBtn").disabled=n===1;
+  $("nextBtn").textContent=n===3?"Confirmer l'inscription":"Continuer →";
+  $("nextBtn").disabled=n===1&&!selectedCourse;
+  clearMessage();
+  if(n===3)renderReview();
+}
+function renderCourses(){
+  const root=$("courseList");
+  if(!courses.length){root.innerHTML='<div class="loading">Aucun cours disponible pour le moment. Veuillez contacter le centre.</div>';return;}
+  root.innerHTML="";
+  courses.forEach(c=>{
+    const b=document.createElement("button");b.type="button";b.className="course"+(selectedCourse&&selectedCourse.id===c.id?" selected":"");
+    const remaining=Number(c.remaining??c.capacity??0);
+    b.innerHTML='<div class="course-top"><span class="course-name"></span><span class="course-level"></span></div><div class="course-info"></div><div class="course-seats"></div>';
+    b.querySelector(".course-name").textContent=c.subject;
+    b.querySelector(".course-level").textContent=c.level;
+    b.querySelector(".course-info").textContent=c.teacher+" · "+c.day+" · "+c.start+"–"+c.end;
+    b.querySelector(".course-seats").textContent=Number.isFinite(remaining)?(remaining>0?remaining+" place(s) disponible(s)":"Complet"):"Disponibilité à confirmer";
+    b.disabled=c.available===false||remaining===0;
+    if(b.disabled){b.style.opacity=".5";b.style.cursor="not-allowed";}
+    b.addEventListener("click",()=>{selectedCourse=c;renderCourses();$("nextBtn").disabled=false;});
+    root.appendChild(b);
+  });
+}
+async function loadCourses(){
+  if(!API_URL){$("courseList").innerHTML='<div class="loading">Le catalogue sera disponible dès que le lien Apps Script sera configuré.</div>';return;}
+  try{
+    const r=await fetch(API_URL+"?action=availability");const d=await r.json();
+    if(!d.success)throw new Error(d.error||"Impossible de charger les cours.");
+    courses=d.courses||[];renderCourses();
+  }catch(e){$("courseList").textContent="Impossible de charger les cours. Veuillez actualiser la page ou contacter le centre.";}
+}
+function validateStep(){
+  if(step===1){if(!selectedCourse){showMessage("Veuillez sélectionner un cours.");return false;}}
+  if(step===2){
+    const fields=["studentName","parentName","phone","email"];
+    for(const id of fields){if(!$(id).value.trim()){showMessage("Veuillez remplir tous les champs obligatoires.");$(id).focus();return false;}}
+    if(!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test($("email").value.trim())){showMessage("Veuillez saisir une adresse e-mail valide.");$("email").focus();return false;}
+    if($("phone").value.trim().length<8){showMessage("Veuillez vérifier le numéro de téléphone.");$("phone").focus();return false;}
+  }
+  if(step===3&&!$("consent").checked){showMessage("Veuillez accepter l'utilisation de vos informations pour traiter la demande.");return false;}
+  return true;
+}
+function renderReview(){
+  const rows=[
+    ["Cours",selectedCourse.subject],["Niveau",selectedCourse.level],
+    ["Enseignant",selectedCourse.teacher],["Horaire",selectedCourse.day+" · "+selectedCourse.start+"–"+selectedCourse.end],
+    ["Élève",$("studentName").value.trim()],["Parent",$("parentName").value.trim()],
+    ["Téléphone",$("phone").value.trim()],["E-mail",$("email").value.trim()]
+  ];
+  $("review").innerHTML=rows.map(([k,v])=>'<div class="review-row"><span></span><strong></strong></div>').join("");
+  [...$("review").children].forEach((el,i)=>{el.children[0].textContent=rows[i][0];el.children[1].textContent=rows[i][1];});
+}
+async function submitBooking(){
+  if(!API_URL){showMessage("Le service d'inscription n'est pas encore connecté. Veuillez réessayer plus tard.");return;}
+  const btn=$("nextBtn");btn.disabled=true;btn.textContent="Envoi en cours…";clearMessage();
+  const payload={action:"book",studentName:$("studentName").value.trim(),parentName:$("parentName").value.trim(),phone:$("phone").value.trim(),email:$("email").value.trim(),courseId:selectedCourse.id};
+  try{
+    const r=await fetch(API_URL,{method:"POST",headers:{"Content-Type":"text/plain;charset=utf-8"},body:JSON.stringify(payload)});
+    const d=await r.json();
+    if(!d.success)throw new Error(d.message||d.error||"Votre demande n'a pas pu être enregistrée.");
+    $("formArea").classList.add("hidden");$("successArea").classList.remove("hidden");
+    $("reference").textContent=d.reference||"RENDEVO";
+    $("successMessage").textContent=d.message||"Votre demande a bien été transmise. Une confirmation sera envoyée par e-mail.";
+  }catch(e){showMessage(e.message||"Erreur de connexion. Veuillez réessayer.");}
+  finally{btn.disabled=false;btn.textContent="Confirmer l'inscription";}
+}
+$("backBtn").addEventListener("click",()=>{if(step>1)setStep(step-1);});
+$("nextBtn").addEventListener("click",()=>{if(!validateStep())return;if(step<3)setStep(step+1);else submitBooking();});
+loadCourses();
+</script>
+</body>
+</html>
